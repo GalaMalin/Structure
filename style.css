@@ -1,0 +1,166 @@
+body, p {
+    margin: 0;    
+    font-size: 14px;
+    color: #000000;
+    font-family: Helvetica, Tahoma, Arial, sans-serif;;
+    background-color: white;        
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+a {    
+    text-decoration: none;  
+    color: inherit;
+    cursor: pointer;    
+}
+
+button {
+    cursor: pointer;
+    background-color: rgb(0, 0, 139, 0.1);    
+    border: darkblue solid 1px;
+    border-radius: 3px;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+button:hover {
+    background-color: rgb(0, 0, 139, 0.2);
+}
+
+
+.container {           
+    margin: 0 auto;   
+    max-width: 800px;     
+}
+
+/* Блок-заголовок */
+.zag {
+    margin-top: 10px;
+    width: 100%;
+    height: max-content;
+    text-align: center;
+    color: darkblue
+}
+
+/* Блок-блок с модальным окном */
+
+
+/* Блок-блок: имя, информация, стрелки */
+.bi_block {
+    margin: 10px 0;
+    display: flex;           /* Включаем режим Flexbox */
+    height: 3em;            /* Для наглядности примера задаем высоту родителя */
+    width: 100%;             /* Чтобы убедиться, что блок занимает всю доступную ширину */
+    gap: 2px;               /* Опциональный отступ между элементами */    
+}
+
+.bi_block_zag {
+    width: 85%;    
+    height: 100%;
+    display: flex;           /* Включаем режим Flexbox */
+    justify-content: left; /* Горизонтальное выравнивание элементов по центру */
+    align-items: center;     /* Вертикальное выравнивание элементов по центру */
+    font-size: 20px;   
+    background-color: rgb(0, 0, 139, 0.05);
+}
+
+/* центрировать внутренний текст тоже */
+.bi_block_zag_text, .bi_dep_zag_text {        
+    margin: 0 0 0 10px;
+    padding: 5px 0;
+}
+
+.bi_b_button_look {
+    width: 10%;
+    height: 100%;
+    display: flex;           /* Включаем режим Flexbox */
+    justify-content: center; /* Горизонтальное выравнивание элементов по центру */
+    align-items: center;     /* Вертикальное выравнивание элементов по центру */
+    font-size: 15px;
+}
+
+.toggle-button {
+    width: 5%;
+    height: 100%;
+    text-align: center;    
+    display: flex;           /* Включаем режим Flexbox */
+    justify-content: center; /* Горизонтальное выравнивание элементов по центру */
+    align-items: center;     /* Вертикальное выравнивание элементов по центру */
+    color: darkblue;
+    font-size: 2rem;
+    padding: 10px 20px;    
+}
+
+.bi_block_zag, .toggle-button, .bi_dep_zag {
+    border: darkblue solid 1px;
+    border-radius: 3px;   
+}
+
+.hidden-block {
+    max-width: 100%;
+    height: auto;
+    display: none; /* Изображение изначально скрыто */    
+}
+
+.bi_dep {
+    width: 80%;
+    margin: 10px 15px;
+    display: flex;           /* Включаем режим Flexbox */
+    height: 4em;            /* Для наглядности примера задаем высоту родителя */
+    gap: 2px;               /* Опциональный отступ между элементами */    
+}
+
+.bi_dep_zag {
+    width: 95%;    
+    min-height: 100%;
+    max-height: max-content;    
+    display: flex;           /* Включаем режим Flexbox */
+    justify-content: left; /* Горизонтальное выравнивание элементов по центру */
+    align-items: center;     /* Вертикальное выравнивание элементов по центру */
+    font-size: 18px;
+    background-color: rgb(0, 0, 139, 0.015);
+}
+
+/* Стили кнопки */
+        
+        /* Скрытие модального окна по умолчанию */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
+        }
+        
+        /* Контент внутри модального окна */
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.5);
+            max-width: 300px;
+            text-align: center;
+        }
+        
+        /* Кнопка крестик */
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }

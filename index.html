@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Structure</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="circle-c.png" type="image/x-icon">
+</head>
+<body>
+
+<div class="container">
+    <div class="zag"><h1>Структура КЦ</h1></div>
+</div>
+
+<!-- Основная страница -->
+<div class="container">
+
+    <!-- Блок с Блоком: 
+    заголовок, кнопка Инфо для открытия модального окна, 
+    кнопка раскрыть/закрыть структуру блока 
+    БОК-->
+    <div class="bi_block">        
+            <div class="bi_block_zag">
+                <div class="bi_block_zag_text">Блок "Общая координация" (Блок ОК)</div>
+            </div>            
+            <button class="bi_b_button_look" onclick="openModal()">Инфо</button>
+            <button class="toggle-button" data-id="1">▼</button>      
+    </div>  
+    <!-- Блок с Департаментами скрытый: 
+    заголовок, кнопка Инфо для открытия модального окна -->
+    <div class="hidden-block block-1">
+        <div class="bi_dep">
+            <div class="bi_dep_zag">
+                <div class="bi_dep_zag_text">ДУП  Департамент управления персоналом</div>  
+            </div>                      
+            <button class="bi_b_button_look" onclick="openModal()">Инфо</button>
+        </div>
+        <div class="bi_dep">
+            <div class="bi_dep_zag">
+                <div class="bi_dep_zag_text">ДБУ  Департамент бухучета</div>    
+            </div>                    
+            <button class="bi_b_button_look" onclick="openModal()">Инфо</button>
+        </div>
+        <div class="bi_dep">
+            <div class="bi_dep_zag">
+                <div class="bi_dep_zag_text">ДЮК  Департамент юридического контроля</div> 
+            </div>                       
+            <button class="bi_b_button_look" onclick="openModal()">Инфо</button>
+        </div>
+    </div>   
+        
+    <!-- Блок с Блоком: 
+    БВП -->
+    <div class="bi_block">        
+            <div class="bi_block_zag">
+                <div class="bi_block_zag_text">Блок "Внешняя политика" (Блок ВП)</div>
+            </div>            
+            <button class="bi_b_button_look" onclick="openModal()">Инфо</button>
+            <button class="toggle-button" data-id="2">▼</button>      
+    </div>  
+    <!-- Блок с Департаментами скрытый -->
+    <div class="hidden-block block-2">
+        <div class="bi_dep">
+            <div class="bi_dep_zag">
+                <div class="bi_dep_zag_text">ДВС  Департамент внешних связей</div>  
+            </div>                      
+            <button class="bi_b_button_look" onclick="openModal()">Инфо</button>
+        </div>
+        <div class="bi_dep">
+            <div class="bi_dep_zag">
+                <div class="bi_dep_zag_text">ДИО  Департамент информационного обеспечения</div>    
+            </div>                    
+            <button class="bi_b_button_look" onclick="openModal()">Инфо</button>
+        </div>
+        <div class="bi_dep">
+            <div class="bi_dep_zag">
+                <div class="bi_dep_zag_text">ДИОП  Департамент информационно-образовательных программ</div> 
+            </div>                       
+            <button class="bi_b_button_look" onclick="openModal()">Инфо</button>
+        </div>
+        <div class="bi_dep">
+            <div class="bi_dep_zag">
+                <div class="bi_dep_zag_text">ДОАМ  Департамент обеспечения систем авторскими материалами</div> 
+            </div>                       
+            <button class="bi_b_button_look" onclick="openModal()">Инфо</button>
+        </div>
+        <div class="bi_dep">
+            <div class="bi_dep_zag">
+                <div class="bi_dep_zag_text">ИГК  Департамент "Издательство "Главная книга"</div> 
+            </div>                       
+            <button class="bi_b_button_look" onclick="openModal()">Инфо</button>
+        </div>
+        <div class="bi_dep">
+            <div class="bi_dep_zag">
+                <div class="bi_dep_zag_text">ДРРП  Департамент разработки распределенных приложений</div> 
+            </div>                       
+            <button class="bi_b_button_look" onclick="openModal()">Инфо</button>
+        </div>
+        <div class="bi_dep">
+            <div class="bi_dep_zag">
+                <div class="bi_dep_zag_text">ОРВБД  Отдел разработки высоконагруженных баз данных</div> 
+            </div>                       
+            <button class="bi_b_button_look" onclick="openModal()">Инфо</button>
+        </div>
+    </div>   
+
+   
+
+
+<!-- Модальное окно -->
+<div id="myModal" class="modal">
+    <!-- Содержимое модального окна -->
+    <div class="modal-content">
+        <span class="close" onclick="closeModal()">×</span>
+        <h2>Информация</h2>
+        <p>Образован:</p>
+        <p>Руководитель:</p>
+        <p>История изменений:</p>
+    </div>
+</div>
+</div>
+    
+
+    
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
