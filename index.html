@@ -15,7 +15,7 @@
 
 <div class="container">
     <div class="search">
-        <div class="b_zag">Для поиска нажмите "Раскрыть все" и ctrl+F</div>
+        <div class="b_zag">Для поиска по тексту нажмите "Раскрыть все" и ctrl+F</div>
         <button class="btn_all" id="toggle-all-btn"></button>    
     </div>
 </div>
@@ -29,23 +29,23 @@
 БОК 1-->
     <div class="bi_block">        
             <div class="bi_block_zag">Блок "Общая координация" (Блок ОК)</div>            
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="1000" onclick="openModal(this)">Инфо</button>
             <button class="toggle-button" data-id="1">▼</button>      
     </div>  
     <!-- Блок с Департаментами скрытый: 
     заголовок, кнопка Инфо для открытия модального окна -->
     <div class="hidden-block block-1">
         <div class="bi_dep">
-            <div class="bi_dep_zag">ДУП  Департамент управления персоналом</div>                      
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <div class="bi_dep_zag">ДБУ Департамент бухучета</div>                      
+            <button class="bi_button_look" data-info-id="1001" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
-            <div class="bi_dep_zag">ДБУ  Департамент бухучета</div>                    
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <div class="bi_dep_zag">ДЮК Департамент юридического контроля</div>                    
+            <button class="bi_button_look" data-info-id="1002" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
-            <div class="bi_dep_zag">ДЮК  Департамент юридического контроля</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <div class="bi_dep_zag">ДУП Департамент управления персоналом</div>                       
+            <button class="bi_button_look" data-info-id="1003" onclick="openModal(this)">Инфо</button>
         </div>
     </div>   
         
@@ -53,38 +53,38 @@
 БВП 2 -->
     <div class="bi_block">        
             <div class="bi_block_zag">Блок "Внешняя политика" (Блок ВП)</div>            
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="2000" onclick="openModal(this)">Инфо</button>
             <button class="toggle-button" data-id="2">▼</button>      
     </div>  
     <!-- Блок с Департаментами скрытый -->
     <div class="hidden-block block-2">
         <div class="bi_dep">
-            <div class="bi_dep_zag">ДВС  Департамент внешних связей</div>                      
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <div class="bi_dep_zag">ДВС Департамент внешних связей</div>                      
+            <button class="bi_button_look" data-info-id="2001" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
-            <div class="bi_dep_zag">ДИО  Департамент информационного обеспечения</div>                    
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <div class="bi_dep_zag">ДИО Департамент информационного обеспечения</div>                    
+            <button class="bi_button_look" data-info-id="2002" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
-            <div class="bi_dep_zag">ДИОП  Департамент информационно-образовательных программ</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <div class="bi_dep_zag">ДИОП Департамент информационно-образовательных программ</div>                       
+            <button class="bi_button_look" data-info-id="2003" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
-            <div class="bi_dep_zag">ДОАМ  Департамент обеспечения систем авторскими материалами</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <div class="bi_dep_zag">ДОАМ Департамент обеспечения систем авторскими материалами</div>                       
+            <button class="bi_button_look" data-info-id="2004" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
-            <div class="bi_dep_zag">ИГК  Департамент "Издательство "Главная книга"</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <div class="bi_dep_zag">ИГК Департамент "Издательство "Главная книга"</div>                       
+            <button class="bi_button_look" data-info-id="2005" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
-            <div class="bi_dep_zag">ДРРП  Департамент разработки распределенных приложений</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <div class="bi_dep_zag">ДРРП Департамент разработки распределенных приложений</div>                       
+            <button class="bi_button_look" data-info-id="2006" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
-            <div class="bi_dep_zag">ОРВБД  Отдел разработки высоконагруженных баз данных</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <div class="bi_dep_zag">ОРВБД Отдел разработки высоконагруженных баз данных</div>                       
+            <button class="bi_button_look" data-info-id="2007" onclick="openModal(this)">Инфо</button>
         </div>
     </div>   
 
@@ -92,7 +92,7 @@
 БКР 3 -->
     <div class="bi_block">        
         <div class="bi_block_zag">Блок "Координация разработок" (БКР)</div>            
-        <button class="bi_button_look" onclick="openModal()">Инфо</button>
+        <button class="bi_button_look" data-info-id="3000" onclick="openModal(this)">Инфо</button>
         <button class="toggle-button" data-id="3">▼</button>      
     </div>  
     <!-- Блок с Департаментами скрытый: 
@@ -100,19 +100,19 @@
     <div class="hidden-block block-3">
         <div class="bi_dep">
             <div class="bi_dep_zag">ДКП Департамент координации экспертных проектов</div>                      
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="3001" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДКР Департамент координации новых разработок и аналитики</div>                    
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="3002" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДОК Департамент организации и контроля производства аналитики</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="3003" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДНК Департамент новостного контента</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="3004" onclick="openModal(this)">Инфо</button>
         </div>
     </div>  
     
@@ -120,7 +120,7 @@
 БПиТ-ОК 4 -->
     <div class="bi_block">        
         <div class="bi_block_zag">Блок "Производство и технологии – Общая координация" (Блок ПиТ-ОК)</div>            
-        <button class="bi_button_look" onclick="openModal()">Инфо</button>
+        <button class="bi_button_look" data-info-id="4000" onclick="openModal(this)">Инфо</button>
         <button class="toggle-button" data-id="4">▼</button>      
     </div>  
     <!-- Блок с Департаментами скрытый: 
@@ -128,19 +128,19 @@
     <div class="hidden-block block-4">
         <div class="bi_dep">
             <div class="bi_dep_zag">ДРС Департамент региональных систем</div>                      
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="4001" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДИТ Департамент информационных технологий КонсультантПлюс</div>                    
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="4002" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДПРОФ Департамент КонсультантПлюс:ВерсияПроф</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="4003" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДЭМПА Департамент экспертизы и мониторинга правовых актов</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="4004" onclick="openModal(this)">Инфо</button>
         </div>
     </div>  
     
@@ -148,7 +148,7 @@
 БПиТ-ОП 5 -->
     <div class="bi_block">        
         <div class="bi_block_zag">Блок "Производство и технологии – Организация производства" (Блок ПиТ-ОП)</div>            
-        <button class="bi_button_look" onclick="openModal()">Инфо</button>
+        <button class="bi_button_look" data-info-id="5000" onclick="openModal(this)">Инфо</button>
         <button class="toggle-button" data-id="5">▼</button>      
     </div>  
     <!-- Блок с Департаментами скрытый: 
@@ -156,27 +156,27 @@
     <div class="hidden-block block-5">
         <div class="bi_dep">
             <div class="bi_dep_zag">ДНПиОП Департамент нормативно-правовых и отраслевых продуктов</div>    
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="5001" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДПАП Департамент производства авторских продуктов</div>                    
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="5002" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДОСАП Департамент обработки судебной и административной практики</div>                      
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="5003" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДАС Департамент производства аналитических сервисов</div>                      
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="5004" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДАП Департамент автоматизации производства</div>                      
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="5005" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">НСАП Направление развития поиска судебной и административной практики</div>                      
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="5006" onclick="openModal(this)">Инфо</button>
         </div>
     </div>  
 
@@ -184,7 +184,7 @@
 БПиТ-АМ 6 -->
     <div class="bi_block">        
         <div class="bi_block_zag">Блок "Производство и технологии – Авторские материалы" (Блок ПиТ-АМ)</div>            
-        <button class="bi_button_look" onclick="openModal()">Инфо</button>
+        <button class="bi_button_look" data-info-id="6000" onclick="openModal(this)">Инфо</button>
         <button class="toggle-button" data-id="6">▼</button>      
     </div>  
     <!-- Блок с Департаментами скрытый: 
@@ -192,31 +192,31 @@
     <div class="hidden-block block-6">
         <div class="bi_dep">
             <div class="bi_dep_zag">ДААМ Департамент актуализации авторских материалов</div>                      
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="6001" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДРАиКД Департамент рецензирования аналитики и развития конструктора договоров</div>
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="6002" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДМИРО Департамент мониторинга инфоповодов, управления ресурсами и отчетности</div>
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="6003" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДПКА Департамент управления бизнес-процессами, контроля конкурентов и администрирования</div>
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="6004" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДКБ Департамент КонсультантБухгалтер</div>
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="6005" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДПА Департамент правовой и бухгалтерской аналитики</div>
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="6006" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДРЭАП Департамент развития экспертно-аналитических продуктов</div>
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="6007" onclick="openModal(this)">Инфо</button>
         </div>
     </div>  
     
@@ -224,7 +224,7 @@
 БММ-ПС 7 -->
     <div class="bi_block">        
         <div class="bi_block_zag">Блок "Маркетинг и методология – Продуктовая стратегия" (БММ-ПС)</div>            
-        <button class="bi_button_look" onclick="openModal()">Инфо</button>
+        <button class="bi_button_look" data-info-id="7000" onclick="openModal(this)">Инфо</button>
         <button class="toggle-button" data-id="7">▼</button>      
     </div>  
     <!-- Блок с Департаментами скрытый: 
@@ -232,23 +232,23 @@
     <div class="hidden-block block-7">
         <div class="bi_dep">
             <div class="bi_dep_zag">ДПП Департамент продвижения продуктов</div>                     
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="7001" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДАПИП Департамент анализа практики использования продуктов</div>                    
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="7002" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДРПЮ Департамент развития продуктов для юристов</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="7003" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ОРПБС Отдел развития продуктов для бюджетной сферы</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="7004" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ОКВН Отдел координации ввода новшеств</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="7005" onclick="openModal(this)">Инфо</button>
         </div>
     </div>
 
@@ -256,7 +256,7 @@
 БММ-РВК 8 -->
     <div class="bi_block">        
         <div class="bi_block_zag">Блок "Маркетинг и методология – Работа с VIP-клиентами" (БММ-РВК)</div>            
-        <button class="bi_button_look" onclick="openModal()">Инфо</button>
+        <button class="bi_button_look" data-info-id="8000" onclick="openModal(this)">Инфо</button>
         <button class="toggle-button" data-id="8">▼</button>      
     </div>  
     <!-- Блок с Департаментами скрытый: 
@@ -264,23 +264,23 @@
     <div class="hidden-block block-8">
         <div class="bi_dep">
             <div class="bi_dep_zag">ДРВК Департамент по работе с VIP-клиентами</div>                     
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="8001" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДПККК Департамент противодействия конкурентам на крупных клиентах</div>                    
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="8002" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДКРГС Департамент по коммерческой работе с государственными структурами</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="8003" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДМИП Департамент маркетинга инновационных проектов</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="8004" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДМСГ Департамент маркетинга в сфере госзакупок</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="8005" onclick="openModal(this)">Инфо</button>
         </div>
     </div>  
 
@@ -288,7 +288,7 @@
 ДЭМ 9 -->
     <div class="bi_block">        
         <div class="bi_block_zag">Департамент экономического мониторинга (ДЭМ)</div>            
-        <button class="bi_button_look" onclick="openModal()">Инфо</button> 
+        <button class="bi_button_look" data-info-id="9000" onclick="openModal(this)">Инфо</button> 
         <button class="toggle-button" data-id="11" style="visibility: hidden;">▼</button>    
     </div>  
 
@@ -296,7 +296,7 @@
 БММ-РВК 10 -->
     <div class="bi_block">        
         <div class="bi_block_zag">Блок "Расчеты с РИЦ и контроль" (БРРК)</div>            
-        <button class="bi_button_look" onclick="openModal()">Инфо</button>
+        <button class="bi_button_look" data-info-id="11000" onclick="openModal(this)">Инфо</button>
         <button class="toggle-button" data-id="10">▼</button>      
     </div>  
     <!-- Блок с Департаментами скрытый: 
@@ -304,27 +304,27 @@
     <div class="hidden-block block-10">
         <div class="bi_dep">
             <div class="bi_dep_zag">ДК Департамент контроля</div>                     
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="10001" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ОКУ Отдел клиентского учета</div>                    
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="10002" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДПО Департамент правовых отношений</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="10003" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДС Департамент сбыта</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="10004" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДКОППП Департамент комплектации и обеспечения полиграфической и презентационной продукцией</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="10005" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ОАвт Отдел автоматизации</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="10006" onclick="openModal(this)">Инфо</button>
         </div>
     </div>  
 
@@ -332,7 +332,7 @@
 БУС 11 -->
     <div class="bi_block">        
         <div class="bi_block_zag">Блок "Управление Сетью" (БУС)</div>            
-        <button class="bi_button_look" onclick="openModal()">Инфо</button>
+        <button class="bi_button_look" data-info-id="11000" onclick="openModal(this)">Инфо</button>
         <button class="toggle-button" data-id="11">▼</button>      
     </div>  
     <!-- Блок с Департаментами скрытый: 
@@ -340,27 +340,27 @@
     <div class="hidden-block block-11">
         <div class="bi_dep">
             <div class="bi_dep_zag">ДРДС Департамент развития дистрибьюторской Сети</div>                     
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="11001" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">НПКРВЗР Направление подготовки и сертификации кадрового резерва высшего звена РИЦ</div>                    
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="11002" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">НОКР Направление оценки кадрового резерва</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="11003" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ОВС PR Отдел внутрисетевого PR</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="11004" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДР Департамент регулировки</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="11005" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ОУД БУС Отдел управления делами БУС</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="11006" onclick="openModal(this)">Инфо</button>
         </div>        
     </div>  
 
@@ -368,7 +368,7 @@
 БПТиНИОКР-Офлайн 12 -->
     <div class="bi_block">        
         <div class="bi_block_zag">Блок "Программные технологии и НИОКР (Офлайн)"  (Блок ПТиНИОКР-Офлайн)</div>            
-        <button class="bi_button_look" onclick="openModal()">Инфо</button>
+        <button class="bi_button_look" data-info-id="12000" onclick="openModal(this)">Инфо</button>
         <button class="toggle-button" data-id="12">▼</button>      
     </div>  
     <!-- Блок с Департаментами скрытый: 
@@ -376,59 +376,59 @@
     <div class="hidden-block block-12">
         <div class="bi_dep">
             <div class="bi_dep_zag">ДПРБД Департамент проектирования и разработки базы данных</div>                     
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="12001" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДИП Департамент информационного поиска</div>                    
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="12002" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДИПС Департамент ИИ-сервисов и прикладных систем</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="12003" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДТИП Департамент тестирования информационного поиска</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="12004" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДРПТ Департамент развития программных технологий ведения Информационных Банков КонсультантПлюс</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="12005" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДРПО Департамент разработки программных технологий автоматизации процессов и обработки документов</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="12006" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДЭСП Департамент экспертного сопровождения поиска</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="12007" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">НПРПИ Направление проектирования и разработки функциональных модулей уровня представления данных и пользовательского интерфейса</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="12008" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">НКР-офлайн Направление координации разработки Офлайн версии</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="12009" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">НРСХД Направление разработки статистических хранилищ данных</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="12010" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">НРСУБД Направление разработки систем управления большими данными</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="12011" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">НПР Направление поддержки разработки</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="12012" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">НЭП Направление экспериментальных проектов</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="12013" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">НРИС Направление разработки интерактивных сервисови</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="12014" onclick="openModal(this)">Инфо</button>
         </div>
     </div>  
 
@@ -436,7 +436,7 @@
 БПТиНИОКР-Онлайн 13 -->
     <div class="bi_block">        
         <div class="bi_block_zag">Блок "Программные технологии и НИОКР (Онлайн)" (Блок ПТиНИОКР-Онлайн)</div>            
-        <button class="bi_button_look" onclick="openModal()">Инфо</button>
+        <button class="bi_button_look" data-info-id="13000" onclick="openModal(this)">Инфо</button>
         <button class="toggle-button" data-id="13">▼</button>      
     </div>  
     <!-- Блок с Департаментами скрытый: 
@@ -444,43 +444,43 @@
     <div class="hidden-block block-13">
         <div class="bi_dep">
             <div class="bi_dep_zag">ДВОВиПТ Департамент внедрения Онлайн-версии и перспективных технологий</div>                     
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="13001" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДТ Департамент тестирования</div>                    
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="13002" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДРОВ Департамент разработки Онлайн-версий КонсультантПлюс</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="13003" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДРТСКиПД Департамент развития технологий сервисных коммуникаций и передачи данных</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="13004" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДРИС Департамент "Редакция Интернет-сервера КонсультантПлюс"</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="13005" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДКРОП Департамент координации разработки онлайн-проектов</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="13006" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">Отдел РТРиЗ Отдел разработки технологий распространения и защиты Систем КонсультантПлюс</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="13007" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ОС Отдел сопровождения Систем КонсультантПлюс</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="13008" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">Направление экспертизы Направление программно-технической экспертизы</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="13009" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ОМПИА Отдел мониторинга поисковости и Интернет-аналитики</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="13010" onclick="openModal(this)">Инфо</button>
         </div>
     </div>  
 
@@ -488,7 +488,7 @@
 БМТО 14 -->
     <div class="bi_block">        
         <div class="bi_block_zag">Блок "Материально-техническое обеспечение" (Блок МТО)</div>            
-        <button class="bi_button_look" onclick="openModal()">Инфо</button>
+        <button class="bi_button_look" data-info-id="14000" onclick="openModal(this)">Инфо</button>
         <button class="toggle-button" data-id="14">▼</button>      
     </div>  
     <!-- Блок с Департаментами скрытый: 
@@ -496,15 +496,15 @@
     <div class="hidden-block block-14">
         <div class="bi_dep">
             <div class="bi_dep_zag">ДЭОиИС Департамент эксплуатации офисов и инженерных систем</div>                     
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="14001" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ДСиОП Департамент снабжения и организации питания</div>                    
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="14002" onclick="openModal(this)">Инфо</button>
         </div>
         <div class="bi_dep">
             <div class="bi_dep_zag">ИТД Инженерно-технический департамент</div>                       
-            <button class="bi_button_look" onclick="openModal()">Инфо</button>
+            <button class="bi_button_look" data-info-id="14003" onclick="openModal(this)">Инфо</button>
         </div>        
     </div>  
 </div>
@@ -520,9 +520,12 @@
     <div class="modal-content">
         <span class="close" onclick="closeModal()">×</span>
         <h2>Информация</h2>
-        <p>Образован:</p>
-        <p>Руководитель:</p>
-        <p>История изменений:</p>
+        <h3>Образован:</h3>
+        <p id="modalState"></p>
+        <h3>Руководитель:</h3>
+        <p id="modalHead"></p>
+        <h3>История изменений:</h3>
+        <p id="modalHistory"></p>
     </div>
 </div>
 </div>
@@ -530,8 +533,9 @@
 
     
 
-
+<script src="data.js"></script>
 <script src="script.js"></script>
+
 
 
 </body>

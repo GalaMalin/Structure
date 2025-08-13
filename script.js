@@ -163,8 +163,20 @@ document.getElementById('hideAllButton').addEventListener('click', hideAllBlocks
 
 
 // Функция открытия модального окна
-function openModal() {
+/*function openModal() {
     document.getElementById('myModal').style.display = 'block';
+}*/
+
+function openModal(button) {
+    const infoId = button.getAttribute('data-info-id');
+    const selectedItem = modalInfo.find(item => item.id == infoId);
+
+    if (selectedItem) {
+        document.getElementById('modalState').innerText = selectedItem.state;
+        document.getElementById('modalHead').innerText = selectedItem.head;
+        document.getElementById('modalHistory').innerText = selectedItem.history;
+        document.getElementById('myModal').style.display = 'block';
+    }
 }
 
 // Функция закрытия модального окна
