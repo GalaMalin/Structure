@@ -2,8 +2,7 @@ body, p {
     margin: 0;    
     font-size: 14px;
     color: #000000;
-    font-family: Helvetica, Tahoma, Arial, sans-serif;;
-           
+    font-family: Helvetica, Tahoma, Arial, sans-serif;           
 }
 
 *,
@@ -24,6 +23,7 @@ button {
     border: darkblue solid 1px;
     border-radius: 3px;
     transition: opacity 0.4s ease, transform 0.4s ease;
+    font-size: 15px;
 }
 
 button:hover {
@@ -35,6 +35,11 @@ button:hover {
     max-width: 800px;     
 }
 
+@media (max-width: 600px) { 
+    .container {
+        max-width: 600px;
+    } }
+
 /* Блок-заголовок */
 .zag {
     margin-top: 10px;
@@ -44,9 +49,36 @@ button:hover {
     color: darkblue
 }
 
-/* Блок-блок с модальным окном */
+/* Кнопка Открыть/закрыть все */
+.search {
+    margin: 10px 0;
+    display: flex;           /* Включаем режим Flexbox */    
+    height: 3em;         /* Задаем высоту родителя */    
+    align-items: stretch;    /* Все элементы принимают одинаковую высоту */
+    width: 100%;             /* Блок занимает всю доступную ширину */
+    gap: 2px;                /* Отступ между элементами */    
+}
 
-/* Блок-блок: имя, информация, стрелки */
+.b_zag {
+    width: 84.57%;  
+    height: 100%;    
+    display: flex;           /* Включаем режим Flexbox */
+    flex-grow: 1;            /* Блок будет занимать оставшееся пространство */
+    justify-content: left;   /* Горизонтальное выравнивание элементов по левому */
+    align-items: center;     /* Вертикальное выравнивание элементов по центру */
+    font-size: 14px;   
+    background-color: rgb(0, 0, 139, 0.01);
+    padding: 10px;
+}
+
+.btn_all {
+    width: 15.43%;
+    height: 100%;    
+}
+
+/* Главный блок с модальным окном */
+
+/* Блок-блок: имя, инфо, стрелки */
 .bi_block {
     margin: 10px 0;
     display: flex;           /* Включаем режим Flexbox */    
@@ -57,6 +89,7 @@ button:hover {
     gap: 2px;                /* Отступ между элементами */    
 }
 
+/* Имя */
 .bi_block_zag {
     width: 85%;  
     height: 100%;    
@@ -68,7 +101,7 @@ button:hover {
     background-color: rgb(0, 0, 139, 0.05);
     padding: 10px;
 }
-
+/* Кнопка Инфо */
 .bi_button_look {
     width: 10%;       
     flex-shrink: 0;          /* Элементы не сжимаются меньше своего базового размера */
@@ -77,7 +110,7 @@ button:hover {
     align-items: center;     /* Вертикальное выравнивание элементов по центру */
     font-size: 15px;
 }
-
+/* Стрелка-преключатель */
 .toggle-button {
     width: 5%;    
     flex-shrink: 0;
@@ -88,11 +121,13 @@ button:hover {
     color: darkblue;
     font-size: 2rem;        
 }
-
-.bi_block_zag, .toggle-button, .bi_dep_zag {
+/* Рамки всем элементам */
+.bi_block_zag, .toggle-button, .bi_dep_zag, .b_zag, .btn_all {
     border: darkblue solid 1px;
     border-radius: 3px;   
 }
+
+/* Блок с департаментами (изначально скрыт) */
 
 .hidden-block {
     max-width: 100%;
@@ -100,6 +135,7 @@ button:hover {
     display: none;           /* Изображение изначально скрыто */    
 }
 
+/* Блок с одним департаментом: имя, инфо */
 .bi_dep {    
     margin: 10px 20px;
     width: 90%; 
@@ -109,7 +145,7 @@ button:hover {
     align-items: stretch;    /* Все элементы принимают одинаковую высоту */                 
     gap: 2px;                /* Опциональный отступ между элементами */    
 }
-
+/* Имя */
 .bi_dep_zag {
     width: 95%;    
     height: 100%;  
@@ -122,9 +158,9 @@ button:hover {
     padding: 10px;    
 }
 
-/* Стили кнопки */
+
         
-        /* Скрытие модального окна по умолчанию */
+/* Модальное окно (скрыто по умолчанию) */
         .modal {
             display: none;
             position: fixed;
@@ -162,3 +198,6 @@ button:hover {
             text-decoration: none;
             cursor: pointer;
         }
+
+
+        
